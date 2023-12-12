@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Medicatec - Seu site sobre medicamentos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body>
+  <header class="z-1 cabecalho-principal" id="cabecalho">
+    <figure class="campo-logo"><img src="/imagens/logo.png" class="logo" alt="Logo do Site Medicatec"></figure>
+    <h1 class="titulo-cabecalho-principal">Medicatec</h1>
+    <nav class="nav barra-navegacao-principal">
+      <a class="nav-link" href="/index.html">Início</a>
+      <a class="nav-link" href="/sobre-nos.html">Sobre Nós</a>
+      <a class="nav-link" href="/farmacias.html">Farmácias</a>
+      <a class="nav-link" href="/fale-conosco.html">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <aside class="area-botoes-laterais">
+    <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+      aria-expanded="false" aria-controls="collapseExample">
+      <span class="material-symbols-outlined">
+        menu
+      </span>
+    </a>
+    <article class="area-botoes collapse" id="collapseExample3">
+      <input type="checkbox" class="checkbox" id="chk">
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+      <button class="d-flex justify-content-center align-items-center botao-modificar-fonte"
+        onclick="aumentarFonte('+')" id="btn-aumentar">Aa<span class="material-symbols-outlined">
+          arrow_upward_alt</span></button>
+      <button class="d-flex justify-content-center align-items-center botao-modificar-fonte"
+        onclick="aumentarFonte('-')" id="btn-diminuir">Aa<span class="material-symbols-outlined">
+          arrow_downward_alt</span></button>
+    </article>
+  </aside>
+
+  <section class="descricao-medicamentos">
+    <h1 class="title" style="text-align: center;">Tylenol</h1>
+    <br>
+    <p class="fontes"><strong>Composição principal:</strong> paracetamol e excipientes (água purificada, amido, amidoglicolato de
+        sódio, celulose microcristalina, estearato de magnésio, hipromelose e macrogol). </p>
+
+      <p class="fontes"><strong>O que combate:</strong> indicado para o alívio sintomático de dores de cabeça, útil também para a
+        redução da febre e para o alívio temporário de dores leves a moderadas, como: dores associadas a gripes e
+        resfriados comuns, dor de dente, dor nas costas, entre outras. </p>
+
+      <p class="fontes"><strong>Contraindicações:</strong> é contraindicado para menores de 12 anos. É contraindicado caso o paciente
+        possua alergia a qualquer componente de fórmula, problemas no fígado ou esteja grávida.</p>
+
+      <p class="fontes"><strong>Reações comuns:</strong> não foram identificadas reações comuns específicas, porém podem existir
+        algumas reações mais difíceis de ocorrer: urticária, coceira e vermelhidão no corpo, reações alérgicas a este
+        medicamento, aumento das transaminases e erupção fixa medicamentosa.</p>
+
+      <p class="fontes"><strong>Como pode ser encontrado:</strong> comprimidos. </p>
+
+      <p class="fontes"><strong>Modo de usar (posologia recomendada):</strong> o uso é feito de forma oral, com líquidos e
+        independentemente
+        das refeições. Adultos e crianças acima de 12 anos: 2 comprimidos de 6 em 6 horas. Não se pode ultrapassar o
+        total de 8 comprimidos, em doses fracionadas, em um período de 24 horas. </p>
+
+      <p class="fontes"><strong>Precisa de prescrição?</strong> Não </p>
+
+      <p class="fontes"><strong>Preço médio:</strong> R$8,80 – 4 comprimidos Tylenol DC Múltiplas Dores (500mg + 65mg) </p>
+
+      <a class="link-success" href="https://www.tylenol.com.br/sites/tylenol_br/files/bula_-_tylenol_500mg_700mg_0.pdf"
+        target="_blank"><strong>Acesse a bula</strong></a>
+  </section>
+
+  <footer class="rodape">
+    <div class="d-flex align-items-center gap-2">
+      <a href="https://etects.com.br/" target="_blank">
+        <figure class="m-0"><img alt="Logo da Etec de Taboão da Serra. Clique aqui." class="logo-etec"
+            src="https://scontent.fcgh2-1.fna.fbcdn.net/v/t39.30808-6/370373935_802551871663305_4563101253011738454_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=psdmS4NET14AX95f06F&_nc_ht=scontent.fcgh2-1.fna&oh=00_AfCwYuge94wCqcdBmxHItdo4Wf9D9Hi5Xmd2ZP6g2Yr4-w&oe=6573A6B7">
+        </figure>
+      </a>
+      <small>&copy;Etec de Taboão da Serra</small>
+    </div>
+
+    <div class="d-flex flex-column align-items-center">
+      <p>Desenvolvido para fins acadêmicos</p>
+      <p>07/12/2023</p>
+    </div>
+
+    <small>&copy;Medicatec</small>
+  </footer>
+  <script src="/script.js"></script>
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+</body>
+</html> 

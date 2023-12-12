@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medicatec - Seu site sobre medicamentos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body>
+  <header class="z-1 cabecalho-principal" id="cabecalho">
+    <figure class="campo-logo"><img src="imagens/logo.png" class="logo" alt="Logo do Site Medicatec"></figure>
+    <h1 class="titulo-cabecalho-principal">Medicatec</h1>
+    <nav class="nav barra-navegacao-principal">
+      <a class="nav-link" href="index.html" style="border-bottom: 1px solid white">Início</a>
+      <a class="nav-link" href="sobre-nos.html">Sobre Nós</a>
+      <a class="nav-link" href="farmacias.html">Farmácias</a>
+      <a class="nav-link" href="fale-conosco.html">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <main class="conteudo-principal">
+    <section class="area-inicial">
+      <h2 class="titulo-principal">Consumo de medicamentos: polifarmácia, automedicação e dicas</h2>
+      <span class="d-flex flex-column align-items-center material-symbols-outlined" id="seta-icon">
+        <p>Role para Baixo
+        </p>expand_more
+      </span>
+    </section>
+
+    <aside class="z-2 area-botoes-laterais">
+      <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+      </a>
+      <article class="area-botoes collapse" id="collapseExample3">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+        <button class="d-flex justify-content-center align-items-center botao-modificar-fonte"
+          onclick="aumentarFonte('+')" id="btn-aumentar">Aa<span class="material-symbols-outlined">
+            arrow_upward_alt</span></button>
+        <button class="d-flex justify-content-center align-items-center botao-modificar-fonte"
+          onclick="aumentarFonte('-')" id="btn-diminuir">Aa<span class="material-symbols-outlined">
+            arrow_downward_alt</span></button>
+      </article>
+    </aside>
+
+    <section class="area-conteudo-inicial">
+      <p class="texto-conteudo-inicial fontes">
+        É muito comum o consumo de medicamentos atualmente, pois necessitamos deles para sobreviver. Alguns fatores são
+        responsáveis para que nós os utilizemos ainda mais, como doenças crônicas, dores e sintomas, envelhecimento,
+        infecções, marketing e propagandas, fatores regionais e climáticos, livre acesso a medicamentos, falta de
+        consulta médica e instrução, entre outros. O índice do consumo de medicamentos é muito alto no Brasil. Para ter
+        uma noção, segundo uma pesquisa do Conselho Federal de Farmácia (CFF), por meio do Instituto Datafolha (2019),
+        77% dos brasileiros consomem remédios sozinhos, ou seja, praticam a automedicação, que é o ato de consumir e
+        administrar os medicamentos por conta própria, sem orientação médica ou farmacêutica. Essa prática, assim como
+        qualquer uso incorreto de medicamentos, traz riscos aos pacientes, como possíveis intoxicações, reações, dores,
+        doenças, sintomas e interações medicamentosas.
+      </p>
+
+      <figure class="campo-img" id="campo-img1">
+        Figura 1 - Consumo de medicamentos
+        <img src="https://guiadafarmacia.com.br/wp-content/uploads/2021/10/consumo-remedios-pandemia-702x459.jpg"
+          class="img" alt="Consumo de medicamentos">
+        <!--- <figcaption style="text-align:center; font-size: 80%;"> Fonte: Guia da Farmácia, 2021 </figcaption> --->
+      </figure>
+    </section>
+
+    <section class="area-conteudo-principal">
+      <article class="order-2 area-texto">
+        <p class="texto-conteudo-principal fontes">
+          Não é errado consumir medicamentos, porém, devemos consumi-los conscientemente, procurando médicos ou
+          farmacêuticos e cuidando da nossa própria saúde. Dessa maneira, é possível abordar algumas práticas para
+          ajudar
+          a reduzir o índice apresentado, como a promoção do uso racional de medicamentos (medicação adequada para as
+          condições de cada paciente), orientação médica e farmacêutica, monitoramento do quadro clínico, uso correto
+          dos
+          medicamentos, cuidados durante o tratamento, utilização controlada, compra sob prescrição médica, entre
+          outros.
+        </p>
+
+        <p class="texto-conteudo-principal fontes">
+          Além de todas essas práticas, nossa vida cotidiana também deve ser fortalecida para ajudar em nossa saúde,
+          como a relação familiar, alimentação saudável e a prática de exercícios, visando assim, melhorar nossa
+          qualidade de vida e nosso psicológico.
+        </p>
+      </article>
+      <figure class="order-1 campo-img" id="campo-img2">
+        Figura 2 - Relação familiar
+        <img src="https://static1.minhavida.com.br/articles/60/2c/cb/d2/minha-vida-idosos-felizes-article-1.jpg"
+          class="img" alt="Relação familiar">
+        <!--- <figcaption style="text-align: center; font-size: 80%;"> Fonte: Minha Vida, 2018. </figcaption> --->
+      </figure>
+    </section>
+
+    <section class="area-conteudo-principal">
+      <section class="area-texto">
+        <p class="texto-conteudo-principal fontes">
+          Outro aspecto que é importante ressaltar nesse contexto e que é mito presente no nosso cotidiano é a prática
+          da
+          polifarmácia, que seria o uso de 5 ou mais medicamentos regularmente, sendo comum entre idosos. Esse consumo
+          se
+          deve por necessidade, pois os idosos são os mais submetidos e vulneráveis aos medicamentos, por aspectos como:
+          doenças, consequências do envelhecimento, sintomas, comorbidades, falta de orientação e conhecimento sobre
+          riscos, dores, influências, falta de assistência, entre outros. Acerca da utilização de medicamentos na
+          população idosa, Linnebur e Ruscin (2021) comentam:
+        </p>
+
+        <figure>
+          <blockquote class="blockquote fontes">
+            <p>Quase 90% dos adultos idosos tomam regularmente, pelo menos, um medicamento com prescrição médica, quase
+              80% tomam regularmente, pelo menos, dois medicamentos com prescrição médica e 36% tomam regularmente, pelo
+              menos, cinco medicamentos com prescrição médica diferentes [polifarmácia].</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            <cite title="Source Title">(LINNEBUR; RUSCIN, 2021)</cite>
+          </figcaption>
+        </figure>
+      </section>
+
+      <figure class="campo-img" id="campo-img3" style="text-align: center;">
+        Figura 3 - Ocorrência de sintoma (dor de cabeça)
+        <img src="https://lirp.cdn-website.com/c9021746/dms3rep/multi/opt/AdobeStock_189957148-1920w.jpeg" class="img"
+          alt="Ocorrência de sintoma (dor de cabeça)">
+        <!--- <figcaption style="text-align: center; font-size: 80%;"> Fonte: Dr. Felipe Mourão, 2023. </figcaption>--->
+      </figure>
+    </section>
+
+    <section class="area-conteudo-principal">
+      <section class="area-texto">
+        <p class="w-75 texto-conteudo-principal fontes">
+          A maioria desses idosos não toma os medicamentos conforme recomendado pelos médicos. Isso é um grave problema,
+          pois eles são os mais vulneráveis aos efeitos e sintomas de vários medicamentos, ficando bem expostos a
+          internações, às Reações Adversas a Medicamentos (<a class="link-success" data-bs-toggle="collapse"
+            href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">RAM</a>)
+          e às Interações Medicamentosas (<a class="link-success" data-bs-toggle="collapse" href="#collapseExample2"
+            role="button" aria-expanded="false" aria-controls="collapseExample">IM</a>). Dessa maneira, é necesário
+          promover o uso racional de medicamentos, ou seja, medicamentos prescritos adequadamente às necessidades dos
+          pacientes, visando controlar esses problemas.
+
+        <div class="collapse" id="collapseExample1">
+          <div class="card card-body" style="color: black;">
+            RAM: resposta a um medicamento que seja prejudicial, não intencional e que ocorre em doses normalmente
+            utilizadas no ser humano.
+          </div>
+        </div>
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body" style="color: black;">
+            IM: ocorre quando um medicamento influencia a ação de outro.
+          </div>
+        </div>
+        </p>
+      </section>
+    </section>
+
+    <br>
+    <br>
+
+    <section class="w-100 h-100 d-flex justify-content-center area-graficos">
+      <div class="d-flex mb-5 ms-2 me-2">
+        <section class="w-50 me-5 area-grafico1">
+          <div class="card mb-3" style="width: 35rem; height: 35rem;">
+            <div class="row g-0">
+              <div class="w-100 h-50 col-md-4">
+                <img src="/imagens/grafico-1.jpg" class="w-100 h-100 img-fluid rounded-start"
+                  alt="Gráfico do percentual do uso de medicamentos a partir da classe terapêutica em oito estados do Brasil: Amazonas (AM), Tocantins (TO), Minas Gerais (MG), Pernambuco (PE), Distrito Federal (DF), Goiás (GO), Ceará (CE) e Rio Grande do Sul (RS). Todos os valores são aproximados. Analgésicos: 85% no AM, 77% em TO, 62% em MG, 30% em PE, 62% no DF, 40% no CE e 49% no RS; antitérmicos: 37% no AM, 29% em PE e 24% em GO; anti-inflamatórios: 13% no AM, 71% no TO, 40% em MG, 8% em PE, 17% no DF, 29% no CE e 14% no RS; antigripais: 66% no TO e 52% em MG; vitaminas: 40% em MG e 8% em PE.">
+              </div>
+              <div class="w-100 col-md-8">
+                <div class="w-100 card-body">
+                  <p class="w-100 card-text texto-conteudo-grafico">Analisamos uma revisão sobre a automedicação
+                    feita pela PUCRS, que estudou
+                    38
+                    artigos entre 1997 e 2015, em diferentes estados e faixas etárias. Como resultado, os analgésicos,
+                    antitérmicos e anti-inflamatórios foram as classes de medicamentos que tiveram maior índice de uso
+                    nos estados brasileiros pesquisados, conforme mostra o gráfico acima</p>
+                  <p class="card-text"><small class="text-body-secondary">Gráfico da PUCRS</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="w-50 area-grafico2">
+          <div class="card mb-3" style="width: 35rem; height: 35rem;">
+            <div class="row g-0">
+              <div class="w-100 h-50 col-md-4">
+                <img src="/imagens/grafico-2.jpg" class="w-100 h-100 img-fluid rounded-start"
+                  alt="Gráfico sobre o percentual dos medicamentos analgésicos utilizados em cinco estados do Brasil: Paraná (PR), Rio de Janeiro (RJ), Santa Catarina (SC), Rio Grande do Sul (RS) e Goiás (GO). Todos os valores são aprozimados. Dipirona: 72% no PR, 59% no RJ, 36% em SC, 31% no RS e 30% em GO; paracetamol: 71% no Paraná, 15% no RJ e 51% em SC; ácido acetilsalicílico (ASS): 64% no PR, 10% no RJ, 6% em SC e 48% no RS.">
+              </div>
+              <div class="w-100 col-md-8">
+                <div class="w-100 card-body">
+                  <p class="w-100 card-text texto-conteudo-grafico">Desses estados analisados, a classe dos
+                    analgésicos (medicamento destinado
+                    ao
+                    combate à dor) foi a mais consumida, da qual a dipirona, o paracetamol e o AAS foram os medicamentos
+                    mais utilizados (os quais não precisam de prescrição médica).</p>
+                  <p class="card-text"><small class="text-body-secondary">Gráfico da PUCRS</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="area-conteudo-principal">
+      <section class="order-2 area-texto">
+        <p class="texto-conteudo-principal fontes">
+          A facilidade de acesso aos medicamentos (principalmente aos sem prescrição), a falta de disponibilidade dos
+          serviços de saúde e a propaganda influenciadora sobre eles são mais motivos que colaboram para a prática da
+          automedicação em nosso país e contribuem para danificar a nossa própria saúde, com as consequências já ditas.
+          Devido a todos esses fatores já comentados, o cuidado farmacêutico é muito necessário, já que é a partir dele
+          que são obtidas as informações necessárias sobre como utilizar corretamente o medicamento e é possível tirar
+          dúvidas sobre isso. Porém, para que isso ocorra também é necessária a participação do paciente e dos
+          profissionais durante o tratamento, informando sobre o uso racional dos medicamentos (posologia correta
+          baseada
+          nas condições do paciente) e gerando os devidos conhecimentos sobre o assunto.
+        </p>
+      </section>
+
+      <figure class="order-1 campo-img" id="campo-img4">
+        Figura 4 - Cuidado farmacêutico
+        <img src="http://www.crfsp.org.br/images/stories/2022/10_2022/221007_farmaceutico-interna.jpg" class="img"
+          alt="Cuidado farmacêutico">
+        <!--- <figcaption style="text-align: center; font-size: 80%"> Fonte: </figcaption> --->
+      </figure>
+    </section>
+
+
+    <section class="area-conteudo-principal">
+      <h2 class="text-end order-2 subtitulo" style="width: 120%;">Pontos de <span class="text-success">coleta</span>
+        de<br>
+        medicamentos</h2>
+
+      <p class="order-1 texto-conteudo-principal fontes">
+        O cuidado com o meio ambiente é muito necessário, pois o descarte de frascos e resto de medicamentos pode
+        causar impactos graves nele, como
+        a contaminação do solo, dos lençóis freáticos, das águas de rios e dos oceanos e na alteração de algumas
+        formas de vida e habitats naturais. Além disso, medicamentos descartados via esgoto podem contaminar milhares
+        de litros de água, e os descartados no lixo comum seguem para o aterro e comprometem a qualidade do solo.
+        <br><br>
+        Para ajudar na coleta de frascos vencidos ou em desuso, deixaremos aqui o site Programa Descarte Consciente,
+        que permite localizar pontos de coleta desses medicamentos em sua região: <a class="link-success"
+          href="https://www.descarteconsciente.com.br/pontos-de-coleta" target="_blank">Programa
+          Descarte Consciente.</a>
+      </p>
+    </section>
+
+    <section class="videos">
+      <h2 class="text-light text-center subtitulo">VÍDEOS</h2>
+
+      <div class="d-flex justify-content-between">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/dcAY47UWBik?si=SInkcslLpBurwczU"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/Hk1gAaO-5VU?si=DMP6QvSITPuvnMf3"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/nzTkD0yOujE?si=aGHbEGXguby5ycUQ"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="z-0 secao-cards-medicamentos">
+      <h2 class="mb-5 mt-5 subtitulo">Medicamentos</h2>
+
+      <div class="d-flex justify-content-center w-100 ps-3 flex-wrap" style="gap: 50px;">
+        <div class="card card-medicamento">
+          <img src="/imagens/dipirona-monoidratada-img.png" class="card-img-top" alt="Dipirona Monoidratada">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Dipirona Monoidratada</div>
+              <div class="p-2">Preço médio: R$5,50 - 10 comprimidos de 500mg</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/dipirona.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 23px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/doril-img.png" class="card-img-top" alt="Doril">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Doril</div>
+              <div class="p-2">Preço médio: R$9,10 - 6 comprimidos</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/doril.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 23px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/engov-img.png" class="card-img-top" alt="Engov">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Engov</div>
+              <div class="p-2">Preço médio: R$10,00 - 6 comprimidos</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/engov.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 23px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/ibuprofeno-img.png" class="card-img-top" alt="Ibuprofeno">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Ibuprofeno</div>
+              <div class="p-2">Preço médio: R$21,00 - 20 comprimidos de 600g</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/ibuprofeno.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 23px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/ivermectina-img.png" class="card-img-top" alt="Ivermectina">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Ivermectina</div>
+              <div class="p-2">Preço médio: R$20,50 - 4 comprimidos</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/ivermectina.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 23px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/losartana-potássica-img.png" class="card-img-top" alt="Losartana Potássica">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Losartana Potássica</div>
+              <div class="p-2">Preço médio: R$5,00 - 30 comprimidos de 50mg</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/losartana.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 23px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/neosaldina-img.png" class="card-img-top" alt="Neosaldina">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Neosaldina</div>
+              <div class="p-2">Preço médio: R$28,00 - 20 drágeas</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/neosaldina.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 23px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/neosoro-img.png" class="card-img-top" alt="Neosoro">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Neosoro</div>
+              <div class="p-2">Preço médio: R$11,00 - gotejador com 30mL</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/neosoro.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 23px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/paracetamol-img.png" class="card-img-top" alt="Paracetamol">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Paracetamol</div>
+              <div class="p-2">Preço médio: R$5,00 - 10 comprimidos de 750mg</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/paracetamol.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 23px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/toragesic-img.png" class="card-img-top" alt="Toragesic">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Toragesic</div>
+              <div class="p-2">Preço médio: R$50,00 - 10 comprimidos sublinguais</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/toragesic.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 23px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/torsilax-img.png" class="card-img-top" alt="Torsilax">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Torsilax</div>
+              <div class="p-2">Preço médio: R$9,50 - 12 comprimidos (Torsilax Diclofenaco Sódico 50mg)</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/torsilax.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 3px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medicamento">
+          <img src="/imagens/tylenol-img.png" class="card-img-top" alt="Tylenol">
+          <div class="card-body card-body-medicamentos">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">Nome: Tylenol</div>
+              <div class="p-2">Preço médio: R$8,80 – 4 comprimidos Tylenol DC Múltiplas Dores (500mg + 65mg)</div>
+              <div class="p-2 align-self-center"><a href="/cards-medicamentos/tylenol.html" class="btn btn-success"
+                  style="font-size: 20px; border-radius: 100%; height: 45px; width:45px; cursor: pointer; margin-top: 8px;">+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="area-conteudo-principal">
+      <details>
+        <summary style="font-weight: bolder; font-size: 26.8px;">Informações importantes</summary>
+        <br>
+        <nav style="font-size: 25px;">
+          <ul class="fontes">
+            <li>As descrições dos medicamentos acima apresentam: nome, composição principal, o que combate,
+              contraindicações, reações comuns, modo de usar (posologoia recomendada), como pode ser encontrado,
+              precisa
+              de prescrição e preço médio.</li>
+            <li>Não é recomendado partir ou dividir os medicamentos.</li>
+            <li>Não pratique a automedicação.</li>
+            <li>Consulte um médico ou farmacêutico.</li>
+            <li>O uso deles pode variar conforme as condições clínicas do paciente (por isso é necessária ajuda
+              médica).
+            </li>
+            <li>Não conserve os medicamentos de maneira errada (a maioria deles é em uma temperatura ambiente entre
+              15ºC
+              e
+              30ºC). Consulte a bula de cada um.</li>
+            <li>Deixamos o link da bula completa desses medicamentos, assim fica mais fácil tirar dúvidas. Leia a
+              bula!
+            </li>
+            <li>As informações aqui apresentadas são básicas e não completamente adequadas para todos, pois os
+              organismos
+              são diferentes, dessa maneira, deve-se procurar especialistas no assunto.</li>
+            <li>A posologia de alguns medicamentos pode ser diferente, pois alguns componentes e reações podem variar
+              em
+              quantidade. Apresentamos as principais reações e posologias desses medicamentos, priorizando os
+              comprimidos
+              e os mais vendidos, sem especificar cada variedade entre eles.</li>
+            <li>Em casos de potenciais reações, sintomas incomuns ou riscos de saúde, procure urgentemente um médico.
+            </li>
+            <li>Em caso de comorbidades específicas, como diabetes, úlceras, câncer, entre outros, os medicamentos
+              devem
+              ser indicados e administrados por um médico.</li>
+            <li>As reações comuns foram levadas em consideração de uma base de 1 a cada 10 pacientes (além de serem as
+              principais, pois há algumas que são comuns para pacientes específicos).</li>
+            <li>Caso o medicamento seja destinado a alguma criança, procure um médico ou farmacêutico para saber se as
+              condições dela.</li>
+            <li>Não se deve tomar mais medicamentos que a dose recomendada. Em casos de consumo maior que o indicado,
+              procure um farmacêutico para receber instruções.</li>
+            <li>Caso você se esqueça de tomar o medicamento ou tome-o de forma incorreta, leia a bula ou procure um
+              farmacêutico, mas não compense as doses ou se automedique.</li>
+            <li>Os aspectos apresentados na descrição dos medicamentos podem variar conforme os fabricantes.</li>
+            <li>As reações podem variar conforme o paciente, e não obrigatoriamente irão ocorrer durante o uso do
+              medicamento.</li>
+          </ul>
+        </nav>
+      </details>
+    </section>
+
+    <section class="area-atividades">
+      <nav class="nav barra-navegacao-secundaria">
+        <button class="btn btn-success fs-5 btn-nav" onclick="mostrarInfo()"
+          style="background-color: #05482b;">Infográfico</button>
+        <button class="btn btn-success fs-5 btn-nav" onclick="mostrarArtigo()">Nosso artigo</button>
+        <button class="btn btn-success fs-5 btn-nav" onclick="mostrarEntrevista()">Entrevista</button>
+        <button class="btn btn-success fs-5 btn-nav" onclick="mostrarFicha()">Ficha</button>
+        <button class="btn btn-success fs-5 btn-nav" onclick="mostrarArtigosUtilizados()">Artigos
+          utilizados</button>
+        <button class="btn btn-success fs-5 btn-nav" onclick="mostrarPadlet()">Padlet</button>
+        <button class="btn btn-success fs-5 btn-nav" onclick="mostrarReferencias()">Referências
+          Bibliográficas</button>
+      </nav>
+
+      <article class="area-texto-atividades" id="area-infografico"
+        style="display: flex; align-items: center; justify-content: center; gap: 50px;">
+        <p class="texto-atividades fontes">
+          Elaboramos um infográfico sobre os 3 artigos apresentados, reunindo e relacionando as principais informações e
+          o tópico mais importante a ser debatido.
+        </p>
+
+        <figure class="campo-imgs-projetos">
+          <figcaption style="text-align: center; font-weight: bold;">Clique na imagem</figcaption>
+          <a href="projetos-acadêmicos/infografico.pdf" target="_blank"><img
+              src="/projetos-acadêmicos/img-infografico.jpg" alt="Link do infográfico" class="imgs-projetos"></a>
+        </figure>
+      </article>
+
+      <article class="area-texto-atividades" id="area-nosso-artigo">
+        <p class="texto-atividades fontes">
+          Nossa equipe criou um artigo acadêmico informativo sobre os fatores e riscos do consumo de medicamentos em
+          idosos brasileiros, ressaltando esses tópicos e conscientizando sobre o uso racional.
+        </p>
+
+        <figure class="campo-imgs-projetos">
+          <figcaption style="text-align: center; font-weight: bold;">Clique na imagem</figcaption>
+          <a href="projetos-acadêmicos/artigo.pdf" target="_blank"><img src="/projetos-acadêmicos/img-artigo.jpg"
+              alt="Link do artigo" class="imgs-projetos"></a>
+        </figure>
+      </article>
+
+      <article class="area-texto-atividades" id="area-entrevista">
+        <p class="texto-atividades fontes">
+          Nossa equipe agendou uma entrevista com uma enfermeira experiente na área. Por meio disso, podemos entender
+          melhor alguns tópicos comentados, como o cuidado e consumo dos medicamentos.
+        </p>
+        <iframe class="rounded entrevista" width="400" height="315"
+          src="https://www.youtube.com/embed/69bAxCGKtYA?si=TRzNGHyai21a8Q8i" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </article>
+
+      <article class="area-texto-atividades" id="area-ficha">
+        <p class="texto-atividades fontes">
+          Nossa equipe criou uma ficha com algumas propriedades químicas e biológicas do paracetamol, junto com a
+          inclusão do nosso site e a sustentabilidade relacionada aos medicamentos.
+        </p>
+
+        <figure class="campo-imgs-projetos">
+          <figcaption style="text-align: center; font-weight: bold;">Clique na imagem</figcaption>
+          <a href="projetos-acadêmicos/ficha.pdf" target="_blank"><img src="/projetos-acadêmicos/img-ficha.jpg"
+              alt="Link da ficha" class="imgs-projetos"></a>
+        </figure>
+      </article>
+
+      <article class="area-texto-atividades" id="area-artigos">
+        <p class="texto-atividades fontes">
+          Nossa equipe escolheu 3 artigos relacionados com o tema, que abordam aspectos como automedicação,
+          polifarmácia, uso racional de medicamentos, consumo incorreto e auxílio farmacêutico
+        </p>
+        <div class="w-25 accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Artigo 1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Polifarmácia: interações e reações adversas no uso de medicamentos por idosos.
+                <a class="link-success" href="https://www.scielo.br/j/reben/a/49Hwsx38f79S8LzfjYtqYFR/"
+                  target="_blank">Clique
+                  aqui para ver.</a>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Artigo 2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Por que o uso racional de medicamentos deve ser uma prioridade? <a
+                    class="link-success" href="https://www.scielo.br/j/csc/a/ZqY8ZMrdQnVZNtdLNjQsFvM/?format=html#"
+                    target="_blank">Clique
+                    aqui para ver.</a></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Artigo 3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body"> A automedicação no Brasil e a importância do farmacêutico na orientação do
+                  uso
+                  racional de medicamentos de venda livre: uma revisão. <a class="link-success"
+                    href="https://revistaseletronicas.pucrs.br/index.php/graduacao/article/view/25673"
+                    target="_blank">Clique
+                    aqui para ver.</a></div>
+              </div>
+            </div>
+          </div>
+      </article>
+
+      <article class="area-texto-atividades" id="area-padlet">
+        <p class="texto-atividades fontes">
+          Nossa equipe criou um padlet com muitas curiosidades e informações sobre os medicamentos, de forma geral.
+        </p>
+
+        <figure class="campo-imgs-projetos">
+          <figcaption style="text-align: center; font-weight: bold;">Clique na imagem</figcaption>
+          <a href="https://padlet.com/matheusrnieto/medicamentos-7pd1l5mnv08fgsx6" target="_blank"><img
+              src="projetos-acadêmicos/img-padlet.jpg" alt="Link do padlet" class="imgs-projetos"></a>
+        </figure>
+      </article>
+
+      <article class="area-texto-atividades" id="area-referencias">
+        <p class="texto-atividades fontes">
+          Nossa equipe reuniu em um arquivo as referências bibliográficas utilizadas na construção deste site.
+        </p>
+
+        <figure class="campo-imgs-projetos">
+          <figcaption style="text-align: center; font-weight: bold;">Clique na imagem</figcaption>
+          <a href="./projetos-acadêmicos/referencias.pdf" target="_blank"><img
+              src="/projetos-acadêmicos/img-referencias.jpg" alt="Link das referências bibliográficas"
+              class="imgs-projetos"></a>
+        </figure>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="d-flex align-items-center gap-2">
+      <a href="https://etects.com.br/" target="_blank">
+        <figure class="m-0"><img alt="Logo da Etec de Taboão da Serra. Clique aqui." class="logo-etec">
+        </figure>
+      </a>
+      <small>&copy;Etec de Taboão da Serra</small>
+    </div>
+
+    <div class="d-flex flex-column align-items-center">
+      <p>Desenvolvido para fins acadêmicos</p>
+      <p>07/12/2023</p>
+    </div>
+
+    <small>&copy;Medicatec</small>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right" </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
